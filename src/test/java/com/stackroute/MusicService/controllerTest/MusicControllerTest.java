@@ -1,6 +1,6 @@
-package com.stackroute.MusicService.ControllerTest;
+package com.stackroute.MusicService.controllerTest;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.stackroute.MusicService.Exceptions.MusicAlreadyExistsException;
+import com.stackroute.MusicService.exceptions.MusicAlreadyExistsException;
 
 import com.stackroute.MusicService.controller.MusicController;
 import com.stackroute.MusicService.domain.Music;

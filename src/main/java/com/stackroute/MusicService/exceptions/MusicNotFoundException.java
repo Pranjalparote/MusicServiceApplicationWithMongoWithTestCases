@@ -1,9 +1,10 @@
-package com.stackroute.MusicService.Exceptions;
+package com.stackroute.MusicService.exceptions;
 
 public class MusicNotFoundException extends Exception {
     private String message;
 
-    public MusicNotFoundException(){}
+    public MusicNotFoundException() {
+    }
 
     public MusicNotFoundException(String message) {
         super(message);

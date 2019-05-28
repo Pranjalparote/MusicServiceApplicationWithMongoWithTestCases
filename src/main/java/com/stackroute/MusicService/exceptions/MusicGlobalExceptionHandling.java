@@ -1,4 +1,4 @@
-package com.stackroute.MusicService.Exceptions;
+package com.stackroute.MusicService.exceptions;
 
 import com.stackroute.MusicService.response.ResponseForError;
 import org.springframework.http.HttpStatus;
@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class MusicGlobalExceptionHandling extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(value = {MusicAlreadyExistsException.class})
-    public ResponseEntity<ResponseForError> globalMusicAlreadyExistsException(MusicAlreadyExistsException ex)throws Exception {
+    public ResponseEntity<ResponseForError> globalMusicAlreadyExistsException(MusicAlreadyExistsException ex) throws Exception {
         ResponseForError responseForError = new ResponseForError();
         responseForError.setErrorID(HttpStatus.BAD_REQUEST.value());
         responseForError.setErrorMessageInformation(ex.getMessage());

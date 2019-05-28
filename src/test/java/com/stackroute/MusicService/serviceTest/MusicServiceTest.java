@@ -1,5 +1,5 @@
-package com.stackroute.MusicService.MusicServiceTest;
-import com.stackroute.MusicService.Exceptions.MusicAlreadyExistsException;
+package com.stackroute.MusicService.serviceTest;
+import com.stackroute.MusicService.exceptions.MusicAlreadyExistsException;
 import com.stackroute.MusicService.domain.Music;
 import com.stackroute.MusicService.repository.MusicRepository;
 import com.stackroute.MusicService.service.MusicServiceDatabase;
